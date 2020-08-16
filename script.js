@@ -8,17 +8,6 @@ var viewer = new Cesium.Viewer("cesiumContainer", {});
 viewer.scene.globe.enableLighting = true;
 
 var scene = viewer.scene;
-var viewModelTileset;
-
-function reset() {
-  viewer.scene.primitives.remove(viewModelTileset);
-  viewModelTileset = undefined;
-}
-
-function checkZero(newValue) {
-  var newValueFloat = parseFloat(newValue);
-  return newValueFloat === 0.0 ? undefined : newValueFloat;
-}
 
 // The viewModel tracks the state of our mini application.
 var pointClouds = assets;
@@ -100,7 +89,6 @@ clock.onTick.addEventListener(function(clock) {
     for (let pointCloud of pointCloudArray) pointCloud.show = false;
     // Show the new current frame
     currentFrame = frame;
-    tilesetToViewModel(pointCloudArray[currentFrame]);
     pointCloudArray[currentFrame].show = true;
   }
 });
@@ -152,9 +140,6 @@ function moveTileset(tileset, location) {
         originToSurfaceMatrix,
         new Cesium.Matrix4()
       );
-
-      // This is where you would apply the scale
-      // scale down the surfaceToOriginMatrix
 
       // Now construct a matrix to move it to Palo Alto (or wherever)
       var originToPaloAltoSurfaceMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
