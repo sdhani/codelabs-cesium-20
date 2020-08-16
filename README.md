@@ -1,5 +1,7 @@
-# Visualizing Lyft's Level 5 *LiDAR* Data 
- Visualizing Lyft's Level 5 LiDAR data (from their self-driving cars) in an open standard format.
+# Visualizing Lyft's Level 5 Dataset 
+<p align="center"><img src="https://github.com/sdhani/codelabs-cesium-20/blob/master/public/codelabs-animate.gif" /></p>
+
+### <p style="text-align:center;"> Visualizing Lyft's Level 5 LiDAR data (from their self-driving cars) in an open standard format.</p>
 
 ## Team
 - [@sdhani](https://github.com/sdhani)
@@ -7,7 +9,7 @@
 - [@yenlu](https://github.com/yenlu)
 - **Mentor,** [@OmarShehata](https://github.com/OmarShehata)
 
-## Useful Links
+## Quick Links
 ##### [TECH TALK](https://www.youtube.com/watch?time_continue=720&v=wsHNfLxa6Ag&feature=emb_logo)
 > This is our tech talk on the project, including highlights on converting the LiDAR dataset into an open standard format, visualizing it in an open source way for the *first time ever* and challenges we faced to make it happen. It also includes potential next steps for the project.
 
@@ -17,6 +19,6 @@
 ##### [Lyft's Level 5 Self-Driving Car Dataset](https://self-driving.lyft.com/level5/) 
 > Interested in the original dataset? Click here for more information about the data displayed in our visualization.
 
-## Preview
 
-> CodeLabs-Cesium-2020
+
+CodeLabs-Cesium-2020
